@@ -1,5 +1,5 @@
 {% set name = "pyIGRF" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: "ae9e27c6bcbb2730abd1069acd5d0ca72d8fa3d8e71ac75dc1115e52a1b196dc"
+  sha256: "10b7b678b63329579424a53847f3a1c78bc2d2debc715ebf5648f3c5e115a6f2"
 
 build:
   number: 0
