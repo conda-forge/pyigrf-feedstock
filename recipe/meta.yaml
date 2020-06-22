@@ -1,17 +1,17 @@
 {% set name = "pyIGRF" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.3" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: "5317099441f46919572232784b1170205ef95759962be1511e3644246fe398b9"
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 7d3d2d03416dfeab1bc2047b7c1134c426727ec77f9b08778fbe0c54ee4405c5
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
   noarch: python
 
 requirements:
@@ -27,12 +27,12 @@ test:
     - pyIGRF
 
 about:
-  home: "https://github.com/zzyztyy/pyIGRF"
-  license: "MIT"
-  license_family: "MIT"
-  license_file: "LICENSE"
-  summary: "IGRF-12 Model by Python"
-  dev_url: "https://github.com/zzyztyy/pyIGRF"
+  home: https://github.com/zzyztyy/pyIGRF
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: IGRF-12 Model by Python
+  dev_url: https://github.com/zzyztyy/pyIGRF
 
 extra:
   recipe-maintainers:
