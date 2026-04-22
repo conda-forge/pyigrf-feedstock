@@ -1,13 +1,13 @@
 {% set name = "pyIGRF" %}
-{% set version = "0.3.3" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7d3d2d03416dfeab1bc2047b7c1134c426727ec77f9b08778fbe0c54ee4405c5
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | lower }}-{{ version }}.tar.gz
+  sha256: d117a33a8ee5a31aeae415fe9a6777a6586e7ee54184fc74d84df20bb75ebd81
 
 build:
   number: 0
